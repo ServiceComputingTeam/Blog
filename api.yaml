@@ -1,7 +1,7 @@
 swagger: "2.0"
 info:
   description: "  "
-  version: "1.0.0"
+  version: "1.0.1"
   title: "Blog for service computing"
   termsOfService: "https://github.com/ServiceComputingTeam"
   contact: 
@@ -62,12 +62,8 @@ paths:
       responses:
         200:
           description: "successful operation"
-          schema:
-            $ref: "#/definitions/User"
         400:
-          description: "Invalid username supplied"
-        404:
-          description: "User not found"
+          description: "Bad request"
   /user/login:
     get:
       tags:
