@@ -3,6 +3,6 @@
     "spectacle-docs": "^1.0.6"
   },
   "scripts": {
-    "build": "spectacle -t ./docs api.yaml"
+    "build": "spectacle -t ./page api.yaml"
   }
 }
