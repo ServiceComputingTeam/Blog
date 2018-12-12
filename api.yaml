@@ -1,7 +1,7 @@
 swagger: "2.0"
 info:
   description: "  "
-  version: "1.0.3"
+  version: "1.0.4"
   title: "Blog for service computing"
   termsOfService: "https://github.com/ServiceComputingTeam"
   contact: 
@@ -40,6 +40,8 @@ paths:
       responses:
         201:
           description: "Create sucessfully"
+          schema:
+            $ref: "#/definitions/User"
         400:
           description: "Invalid username/password supplied"
     patch:
@@ -59,6 +61,8 @@ paths:
       responses:
         200:
           description: "successful operation"
+          schema:
+            $ref: "#/definitions/User"
         400:
           description: "Bad request"
   /user/login:
@@ -83,8 +87,6 @@ paths:
       responses:
         200:
           description: "Login successfully"
-          schema:
-            type: "string"
         400:
           description: "Invalid username/password supplied"
   /user/blogs:
@@ -107,6 +109,8 @@ paths:
       responses:
         201:
           description: "Publish a new blog successfully"
+          schema:
+            $ref: "#/definitions/Blog"
         400:
           description: "Invalid title"
     get:
