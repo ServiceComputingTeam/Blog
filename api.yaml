@@ -1,7 +1,7 @@
 swagger: "2.0"
 info:
   description: "  "
-  version: "1.0.1"
+  version: "1.0.2"
   title: "Blog for service computing"
   termsOfService: "https://github.com/ServiceComputingTeam"
   contact: 
@@ -65,7 +65,7 @@ paths:
         400:
           description: "Bad request"
   /user/login:
-    get:
+    put:
       tags:
         - "users"
       summary: "Logs user into the system"
@@ -290,7 +290,15 @@ paths:
           description: "Invalid labelname supplied"
         404:
           description: "Label not found"        
-  
+securityDefinitions:
+  key:
+    type: apiKey
+    in: header
+    name: Key
+  secret_key:
+    type: apiKey
+    in: header
+    name: SecretKey  
 definitions:
   User:
     type: "object"
@@ -362,5 +370,3 @@ definitions:
       createtime:
         type: "string"
         format: "date-time"
-  
-        
