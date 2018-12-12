@@ -4,7 +4,7 @@ info:
   version: "1.0.4"
   title: "Blog for service computing"
   termsOfService: "https://github.com/ServiceComputingTeam"
-  contact: 
+  contact:
     email: "895118352@qq.com"
   license:
     name: "Apache 2.0"
@@ -45,7 +45,7 @@ paths:
         400:
           description: "Invalid username/password supplied"
     patch:
-      tags: 
+      tags:
         - "users"
       summary: "Update user"
       operationId: "updateUser"
@@ -114,7 +114,7 @@ paths:
         400:
           description: "Invalid title"
     get:
-      tags: 
+      tags:
         - "users"
       summary: "Get blogs by user login"
       operationId: "getBlogByUser"
@@ -130,10 +130,10 @@ paths:
         400:
           description: "Bad request"
         404:
-          description: "User not found" 
+          description: "User not found"
   /users/{username}/blogs:
     get:
-      tags: 
+      tags:
         - "users"
       summary: "Get blogs by user"
       operationId: "getBlogByUsername"
@@ -155,13 +155,13 @@ paths:
         400:
           description: "Bad request"
         404:
-          description: "User not found" 
+          description: "User not found"
   /blogs:
     get:
-      tags: 
+      tags:
         - "blogs"
       summary: "Get all blogs"
-      operationId: "getALLBlog"
+      operationId: "getAllBlogs"
       produces:
         - "application/json"
       responses:
@@ -175,7 +175,7 @@ paths:
           description: "Bad request"
   /blogs/{username}/{title}:
     get:
-      tags: 
+      tags:
         - "blogs"
       summary: "Get blog by title"
       operationId: "getBlogByTitle"
@@ -203,7 +203,7 @@ paths:
           description: "Blog not found"
   /blogs/{username}/{title}/reviews:
     post:
-      tags: 
+      tags:
         - "blogs"
       summary: "Comment on a blog"
       operationId: "review"
@@ -232,7 +232,7 @@ paths:
         400:
           description: "Bad request"
     get:
-      tags: 
+      tags:
         - "blogs"
       summary: "Get comment by a blog"
       operationId: "getReviewByBlog"
@@ -260,7 +260,7 @@ paths:
           description: "Bad request"
   /labels/{labelname}/blogs:
     get:
-      tags: 
+      tags:
         - "labels"
       summary: "Get blog by label"
       operationId: "getBlogByLabel"
@@ -280,7 +280,7 @@ paths:
         400:
           description: "Invalid labelname supplied"
         404:
-          description: "Label not found"        
+          description: "Label not found"
 securityDefinitions:
   key:
     type: apiKey
@@ -289,7 +289,7 @@ securityDefinitions:
   secret_key:
     type: apiKey
     in: header
-    name: SecretKey  
+    name: SecretKey
 definitions:
   User:
     type: "object"
@@ -305,7 +305,7 @@ definitions:
         type: "string"
       blog:
         type: "array"
-        items: 
+        items:
           $ref: "#/definitions/Blog"
       phone:
         type: "string"
@@ -342,7 +342,7 @@ definitions:
         type: "string"
       blog:
         type: "array"
-        items: 
+        items:
           $ref: "#/definitions/Blog"
   Review:
     type: "object"
