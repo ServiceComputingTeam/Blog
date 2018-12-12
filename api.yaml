@@ -1,7 +1,7 @@
 swagger: "2.0"
 info:
   description: "  "
-  version: "1.0.2"
+  version: "1.0.3"
   title: "Blog for service computing"
   termsOfService: "https://github.com/ServiceComputingTeam"
   contact: 
@@ -28,9 +28,7 @@ paths:
       operationId: "createUser"
       consumes:
         - "application/json"
-        - "application/xml"
       produces:
-        - "application/xml"
         - "application/json"
       parameters:
       - in: "body"
@@ -50,7 +48,6 @@ paths:
       summary: "Update user"
       operationId: "updateUser"
       produces:
-        - "application/xml"
         - "application/json"
       parameters:
       - in: "body"
@@ -71,7 +68,6 @@ paths:
       summary: "Logs user into the system"
       operationId: "userLogin"
       produces:
-        - "application/xml"
         - "application/json"
       parameters:
         - name: "username"
@@ -99,9 +95,7 @@ paths:
       operationId: "publishBlog"
       consumes:
         - "application/json"
-        - "application/xml"
       produces:
-        - "application/xml"
         - "application/json"
       parameters:
       - in: "body"
@@ -121,7 +115,6 @@ paths:
       summary: "Get blogs by user login"
       operationId: "getBlogByUser"
       produces:
-        - "application/xml"
         - "application/json"
       responses:
         200:
@@ -141,7 +134,6 @@ paths:
       summary: "Get blogs by user"
       operationId: "getBlogByUsername"
       produces:
-        - "application/xml"
         - "application/json"
       parameters:
       - name: "username"
@@ -167,7 +159,6 @@ paths:
       summary: "Get all blogs"
       operationId: "getALLBlog"
       produces:
-        - "application/xml"
         - "application/json"
       responses:
         200:
@@ -185,7 +176,6 @@ paths:
       summary: "Get blog by title"
       operationId: "getBlogByTitle"
       produces:
-        - "application/xml"
         - "application/json"
       parameters:
       - name: "username"
@@ -214,7 +204,6 @@ paths:
       summary: "Comment on a blog"
       operationId: "review"
       produces:
-        - "application/xml"
         - "application/json"
       parameters:
       - name: "username"
@@ -244,7 +233,6 @@ paths:
       summary: "Get comment by a blog"
       operationId: "getReviewByBlog"
       produces:
-        - "application/xml"
         - "application/json"
       parameters:
       - name: "username"
@@ -273,7 +261,6 @@ paths:
       summary: "Get blog by label"
       operationId: "getBlogByLabel"
       produces:
-        - "application/xml"
         - "application/json"
       parameters:
       - name: "labelname"
