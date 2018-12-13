@@ -1,7 +1,7 @@
 swagger: "2.0"
 info:
   description: "Our blog has three tags: user,blog, and label. Users need to log in to post or comment on blogs. Users can query all blogs and specific blogs by title. Users can also query all blogs under one tag."
-  version: "1.0.5"
+  version: "1.0.6"
   title: "Blog for service computing"
   termsOfService: "https://github.com/ServiceComputingTeam"
   contact:
@@ -303,10 +303,10 @@ definitions:
         type: "string"
       password:
         type: "string"
-      blog:
+      blogId:
         type: "array"
         items:
-          $ref: "#/definitions/Blog"
+          type: "integer"
       phone:
         type: "string"
   Blog:
