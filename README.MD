@@ -25,6 +25,6 @@
 
 * 陈祐洋 16340046 (@Dennis273)：客户端 项目管理
 * 邓子杰 16340056 (@Dmaxzj) ：服务端
-* 王睿泽 xxxxxxxx (@dashuibihello)：API 设计
+* 王睿泽 16340221 (@dashuibihello)：API 设计
 * ？？？ xxxxxxxx (huangyt39)：服务端
 * ？？？ xxxxxxxx (@xxttking)：？？？
