@@ -8,6 +8,10 @@
 
 ### 客户端
 
+[Blog FE](https://github.com/ServiceComputingTeam/Blog-FE)
+
+使用 [React](https://reactjs.org/) 以及 [Ant Design of React](https://ant.design/index-cn) 进行开发。
+
 ### 服务端
 
 ### API 文档
@@ -27,4 +31,4 @@
 * 邓子杰 16340056 (@Dmaxzj) ：服务端
 * 王睿泽 16340221 (@dashuibihello)：API 设计
 * ？？？ xxxxxxxx (huangyt39)：服务端
-* ？？？ xxxxxxxx (@xxttking)：？？？
+* ？？？ xxxxxxxx (@xxttking)：凑人数？
